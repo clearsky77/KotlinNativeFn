@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 
-//      2. 문자 전송(SANDTO)
+//      3. 문자 전송(SANDTO)
         smsBtn.setOnClickListener {
             val inputPhoneNum = phoneNumEdt.text.toString()
             val myUri = Uri.parse("smsto:${inputPhoneNum}")
@@ -36,5 +36,7 @@ class MainActivity : AppCompatActivity() {
             myIntent.putExtra("sms_body", "내용") //미리 보내줄 내용 적어두기
             startActivity(myIntent)
         }
+
+
     }
 }
