@@ -21,7 +21,7 @@
         android:id="@+id/phoneNumEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="연결할 전화번호 입력"
+        android:hint="연결할 전화번호 입력"
         android:inputType="phone"/>
 
     <Button
@@ -34,5 +34,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="2. 전화 걸기(CALL)"/>
+    <Button
+        android:id="@+id/smsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. 문자 전송(SENDTO)"/>
 
 </LinearLayout>
