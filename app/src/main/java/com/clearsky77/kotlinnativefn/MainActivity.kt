@@ -17,6 +17,15 @@ class MainActivity : AppCompatActivity() {
             val myUri = Uri.parse("tel:${inputPhoneNum}") //전화 걸 정보(Uri)로 가공. android.net.Uri사용
             // 전화 화면으로 이동 + Uri 조합 -> intent
             val myIntent = Intent(Intent.ACTION_DIAL, myUri)
+            startActivity(myIntent)
+        }
+
+//      2. 전화 걸기(CALL)
+        callBtn.setOnClickListener {
+            val inputPhoneNum = phoneNumEdt.text.toString()
+            val myUri = Uri.parse("tel:${inputPhoneNum}")
+            val myIntent = Intent(Intent.ACTION_CALL, myUri)
+            startActivity(myIntent)
         }
     }
 }
