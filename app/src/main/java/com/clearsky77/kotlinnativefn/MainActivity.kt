@@ -37,6 +37,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 
+//      4. 인터넷 창 띄우기(VIEW)
+        naverLinkBtn.setOnClickListener {
+            val myUri = Uri.parse("https://naver.com")
+            val myIntent = Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
+        }
 
+//      5. 플레이 스토어 연결(VIEW)
+        cacaoStoreLinkBtn.setOnClickListener {
+            val myUri = Uri.parse("market://details?id=com.kakao.talk&hl=ko")
+            val myIntent = Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
+        }
     }
 }

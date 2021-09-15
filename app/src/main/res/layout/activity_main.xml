@@ -39,5 +39,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="3. 문자 전송(SENDTO)"/>
+    <Button
+        android:id="@+id/naverLinkBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4. 인터넷 띄우기-네이버(VIEW)"/>
+    <Button
+        android:id="@+id/cacaoStoreLinkBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. 플레이 스토어-카카오 어플(VIEW)"/>
 
 </LinearLayout>
